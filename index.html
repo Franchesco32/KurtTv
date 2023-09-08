@@ -140,7 +140,7 @@
                 <div class="content">
                     <div class="name">Que Horas Eu Te Pego ? </div>
                     <div class="des">Desesperada por dinheiro, uma mulher concorda em namorar o filho introvertido e desajeitado de 19 anos de um casal rico</div>
-                    <button><a href="https://embedflix.net/tv/tnt-sports-5">Assistir</a></button>
+                    <button id="Botao01" class="botao">Assistir</button>
                     
                 </div>
             </div>
@@ -193,8 +193,9 @@
     button.addEventListener('click', function() {
     window.location.href = '/embed.html';
     });
-
- 
+    document.getElementById("Botao01").addEventListener("click", function() {
+       window.location.href = "https://embedflix.net/tv/tnt-sports-5";
+     });
     </script>
 </body>
 </html>
