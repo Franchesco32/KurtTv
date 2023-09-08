@@ -1,0 +1,143 @@
+{ 
+    "type" :  "list" , 
+    "headline" :  "Backdrop Plugin Test" , 
+    "transparent" :  2 , 
+    "preload" :  "next" , 
+    "underlay" :  { 
+        "action" :  "[quiet|delay:backdrop: 1:interaction:load:http://msx.benzac.de/interaction/backdrop.html]" , 
+        "data" :  {                
+            "url" :  "none" 
+        }, 
+        "items" :  [{ 
+                "id" :  "texto " ,
+                "type" :  "espaço" , 
+                "layout" :  "0,0,6,3", 
+                "headline" :  "" , 
+                "text" :  "" 
+            }] 
+    }, 
+    "template" :  { 
+        "type" :  "default" , 
+        "layout" :  "0,0,2,3" , 
+        "area" :  " 0,3,12,3" , 
+        "wrapperColor" :  "msx-glass" , 
+        "imageHeight" :  1,83 , 
+        "color" :  "msx-glass" , 
+        "imageFiller" :  "cover" ,
+        "truncation" :  "titleHeader|titleFooter" , 
+        "titleHeader" : "" , 
+        "titleFooter" :  "" , 
+        "description" :  "Nenhuma descrição disponível." , 
+        "backdrop" :  "none" , 
+        "image" :  "none" , 
+        "selection" :  { 
+            "important" :  true , 
+            "action" :  "data" , 
+             "data" :  { 
+                "actions" :  [{ 
+                        "action" :  "invalidar:conteúdo:underlay:texto" 
+                    }, 
+                         
+                        :  { 
+                            "headline" :  "{context:titleHeader}" , 
+                            "text" :  "{context:titleFooter}{br}{br}{context:description}" 
+                        } 
+                    },  { 
+                        "action" :  "atraso:backdrop:1 :interaction:load:http://msx.benzac.de/interaction/backdrop.html" , 
+                        "data" :  { 
+                            "url" :  "{context:backdrop}" , 
+                            "type" :  1 
+                        } 
+                    }] 
+            } 
+        }, 
+        "propriedades" :  { 
+            "imagem:extensão" :  "| {contexto:titleHeader}" 
+        } 
+    }, 
+    "itens" :  [{
+            "titleHeader" :  "{col:msx-white}Primeiro Item" , 
+            "titleFooter" :  "Duis rutrum orci purus" , 
+            "description" :  "Lorem ipsum dolor sit amet, omittam vivendum ad mea, putant voluptaria mei an, cum saperet probatus ea. Gloriatur adolescens est id, denique oporteat incidente an nec, ut mea veniam aliquando signiferumque. Quod periculis adversarium qui te. Ea pri facer sempre, stet eleifend per ut. Eum soluta pertinacia an, vel tation tollit pertinax et. Aperiri scribentur. " , 
+            "pano de fundo" :  "https://picsum.photos/seed/msx_item0/960/540" , 
+            "imagem" :  "https://picsum.
+            :  "image:https://picsum.photos/seed/msx_item0/1920/1080" 
+        },  { 
+            "titleHeader" :  "{col:msx-white}Segundo Item" , 
+            "titleFooter" :  "Orci varius natoque penatibus et" , 
+            "descrição" :  "Lorem ipsum dolor sit amet, duo iisque erroribus comprehensam no, at pri quis apeirian perpetua. Ea ius harum oportere, idque audiam impedit mea ei, eam ea utinam moderatius. No nam albucius voluptua fabellas, cibo ancillae at nam . Cu viris volutpat." , 
+            "pano de fundo" :  "https://picsum.photos/seed/msx_item1/960/540" , 
+            "imagem" :  "https:
+            "action" :  "image:https://picsum.photos/seed/msx_item1/1920/1080" 
+        },  { 
+            "titleHeader" :  "{col:msx-white}Terceiro item" , 
+            "titleFooter" :  "Sed e sem augue" , 
+            ​​"description" :  "Lorem ipsum dolor sit amet, habeo singulis vel ex. Cu nec regione constituam, ne has rebum oratio regione. Ei simul vivendo reformidans usu, id nibh." , 
+            "pano de fundo" :  "https://picsum.photos/seed/msx_item2/960/540" , 
+            "imagem" :  "https://picsum.photos/seed/msx_item2/264/264" ,
+             
+        },  { 
+            "titleHeader" :  "{col:msx-white}Quarto Item" , 
+            "titleFooter" :  "Mauris tincidunt non mauris ut" , 
+            "description" :  "Lorem ipsum dolor sit amet, ad nam vero efficiendi. At legere abominável mei, usu cu tollit delenit invenire. Vis cu quando tractatos concludaturque, an wisi pertinax vis. Ut vis civibus eleifend neglegentur, sea feugait quaestio cu, homero delicata gloriatur at sit. Te ius facer timeam, an eum veniam mnesarchum elitr." , 
+            "pano de fundo" :  "https://picsum.photos/seed/msx_item3/960/540" , 
+            "imagem" :  "https://picsum.
+            :  "image:https://picsum.photos/seed/msx_item3/1920/1080" 
+        },  { 
+            "titleHeader" :  "{col:msx-white}Quinto Item" , 
+            "titleFooter" :  "Sed e sem agosto" , 
+            "description" :  "Lorem ipsum dolor sit amet, ad noster vocibus albucius pro, alia latine aeterno est cu, sententiae posidonium cu sea. Ex primis placerat sed, nam tollit persecuti ad. Idque maluisset contentiones id nam, pro ex sint impetus dissentiet. Est ne omittantur consectetuer, audiam ocurreret qui eu." , 
+            "pano de fundo" :  "https://picsum.photos/seed/msx_item4/960/540" , 
+            "imagem" : , 
+            "action" :  "image: https://picsum.photos/seed/msx_item4/1920/1080" 
+        },  { 
+            "titleHeader" :  "{col:msx-white}Sexto Item" , 
+            "titleFooter" :  "Vestibulum ex lectus" , 
+            "description" :  "Lorem ipsum dolor sit amet, sit no hinc quot doctus." , 
+            "pano de fundo" :  "https://picsum.photos/seed/msx_item5/960/540" , 
+            "imagem" :  "https://picsum.photos/seed/msx_item5/264/264" , 
+            "ação" :  " imagem: https://picsum.
+         
+             "{col:msx-white}Sétimo Item" , 
+            "titleFooter" :  "Cras sapien tortor" , 
+            "description" :  "Lorem ipsum dolor sit amet, duo iisque erroribus comprehensam no, at pri quis apeirian perpetua. Ea ius harum oportere, idque audiam impedit mea ei, eam ea utinam moderatius. No nam albucius voluptua fabellas, cibo ancillae at nam. Cu viris volutpat." , 
+            "pano de fundo" :  "https://picsum.photos/seed/msx_item6/960/540" , 
+            "imagem" :  "https://picsum.photos/seed/msx_item6/264/264" , 
+            "ação" :  " imagem: https://picsum.
+         
+             "{col:msx-white}Oitavo Item" , 
+            "titleFooter" :  "Duis rutrum orci purus" , 
+            "description" :  "Lorem ipsum dolor sit amet, omittam vivendum ad mea, putant voluptaria mei an, cum saperet probatus ea. Gloriatur adolescens est id, denique oporteat incidente an nec, ut mea veniam aliquando signiferumque. Quod periculis adversarium qui te. Ea pri facer sempre, stet eleifend per ut. Eum soluta pertinacia an, vel tation tollit pertinax et. Aperiri scribentur." , 
+            "pano de fundo" :  "https://picsum.photos/seed/msx_item7/960/540" , 
+            "imagem" :  "https://picsum.photos/seed/msx_item7/264/264" ,
+             "image: https://picsum.photos/seed/msx_item7/1920/1080" 
+        },  { 
+            "titleHeader" :  "{col:msx-white}Nono Item" , 
+            "titleFooter" :  "Aliquam nulla orci" , 
+            "descrição " :  "Lorem ipsum dolor sit amet, habeo singulis vel ex. Cu nec regione constituam, ne has rebum oratio regione. Ei simul viver reformidans usu, id nibh." , 
+            "pano de fundo" :  "https://picsum.photos/seed/msx_item8/960/540" , 
+            "imagem" :  "https://picsum.photos/seed/msx_item8/264/264" , 
+            "ação" :  " imagem:https:
+         
+            "titleHeader" :  "{col:msx-white}Décimo Item" , 
+            "titleFooter" :  "Fusce posuere sapien turpis" , 
+            "description" :  "Lorem ipsum dolor sit amet, ad nam vero efficiendi. At legere abhorreant mei, usu cu tollit delenit invenire. Vis cu quando tractatos concludaturque, an wisi pertinax vis. Ut vis civibus eleifend neglegentur, sea feugait quaestio cu, homero delicata gloriatur at sit. Te ius facer timeam, an eum veniam mnesarchum elitr." , 
+            "pano de fundo" :  "https://picsum.photos/seed/msx_item9/960/540" , 
+            "imagem" :  "https://picsum.
+             "image: https://picsum.photos/seed/msx_item9/1920/1080" 
+        },  { 
+            "titleHeader" :  "{col:msx-white}Décimo primeiro item" , 
+            "titleFooter" :  "Fusce convallis sagittis tempus" , 
+            " description" :  "Lorem ipsum dolor sit amet, ad noster vocibus albucius pro, alia latine aeterno est cu, sententiae posidonium cu sea. Ex primis placerat sed, nam tollit persecuti ad. Idque maluisset contentiones id nam, pro ex sint impetus dissentiet. Est ne omittantur consectetuer, audiam ocurreret qui eu." , 
+            "pano de fundo" :  "https://picsum.photos/seed/msx_item10/960/540" ,
+             , 
+            "action" :  "image: https://picsum.photos/seed/msx_item10/1920/1080" 
+        },  { 
+            "titleHeader" :  "{col:msx-white}Décimo segundo item" , 
+            "titleFooter" :  "Aliquam nulla orci" , 
+            "description" :  "Lorem ipsum dolor sit amet, scaevola perpetua ut qui. Te per partem definições, id has modus delenit scriptorem. Eu eos." , 
+            "pano de fundo" :  "https://picsum.photos/seed/msx_item11/960/540" , 
+            "imagem" :  "https://picsum.photos/seed/msx_item11/264/264" ,
+             
+        
+}
